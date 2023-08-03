@@ -1,0 +1,721 @@
+//header
+.nav{
+    background-color: @gray-dark;
+    padding: 30px 0;
+    position: relative;
+    .navLogo{
+        position: absolute;
+        left: 20px;
+        top: 25px;
+    }
+    .button{
+        display: none;
+        position: absolute;
+        right: 80px;
+        bottom: 20px;
+        background: @orange;
+        color: @white;
+        font-size: 18px;
+        padding: 5px 20px;
+        border: none;
+        @media (max-width: 860px) {
+            display: block;
+        }
+    }
+
+    .buttonMenu{
+        background: #000;
+        display: none;
+        @media (max-width: 860px) {
+            display: block;
+        }
+        .navContentMenu{
+            text-align: center;
+            .navContentMenuItem{
+                list-style: none;
+                .navContentMenuItemLink{
+                    color: @white;
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 18px;
+                    span{
+                        color: @orange;
+                        transition: all 0.5s;
+                    }
+                    &:hover{
+                        color: @orange;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+    }
+
+    .navContent{
+        text-align: right;
+        @media (max-width: 860px) {
+            display: none;
+        }
+        .navContentItem{
+            display: inline-block;
+            list-style: none;
+            .navContentItemLink{
+                color: @white;
+                text-decoration: none;
+                bottom: 20px;
+                margin: 0 20px;
+                font-weight: 500;
+                font-size: 18px;
+                span{
+                    color: @orange;
+                    transition: all 0.5s;
+                }
+                &:hover{
+                    color: @orange;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+}
+//header
+
+//banner
+.banner{
+        position: relative;
+    img{
+        width: 100%;
+    } 
+    .bannerTitle{
+        position: absolute;
+        font-size: 60px;
+        color: @gray;
+        left: 120px;
+        top: 100px;
+        span{
+            color: @white;
+            font-weight: 700;
+            font-size: 65px;
+            @media (max-width: 1050px) {
+                font-size: 40px;
+                left: 10px;
+                top: 0;
+            }
+            @media (max-width: 810px) {
+                font-size: 25px;
+            }
+            @media (max-width: 554px) {
+                font-size: 20px;              
+            }
+        }
+        @media (max-width: 1050px) {
+            font-size: 40px;
+            left: 10px;
+            top: 0;
+        }
+        @media (max-width: 810px) {
+            font-size: 25px;
+        }
+        @media (max-width: 554px) {
+            font-size: 20px;
+        }
+    } 
+
+    .bannerText{
+        position: absolute;
+        font-size: 16px;
+        font-weight: 300;
+        color: @white;
+        left: 120px;
+        top: 300px;
+        @media (max-width: 1050px) {
+            top: 140px;
+            left: 10px;
+        }
+        @media (max-width: 810px) {
+            top: 100px;
+            left: 10px;
+        }
+        @media (max-width: 554px) {
+            font-size: 14px;
+            top: 70px;
+        }
+        @media (max-width: 487px) {
+            font-size: 10px;
+            top: 55px;
+        }
+        @media (max-width: 349px) {
+            font-size: 8px; 
+        }
+    }  
+
+    .buttonMore{
+        background: @gray;
+        color: @white;
+        position: absolute;
+        bottom: 7px;
+        left: 0;
+        font-size: 18px;
+        border: none;
+        padding: 18px 30px;
+        cursor: pointer;
+        &:hover{
+            background: @orange;
+            transition: all 0.5s;
+        } 
+        @media (max-width: 487px) {
+            padding: 15px 20px;
+        }
+        @media (max-width: 380px) {
+            padding: 7px 14px;
+            font-size: 12px;
+        }
+    }
+
+    // .buttonsPrevNext{
+    //     position: absolute;
+    //     top: 450px;
+    //     left: 630px;
+    //     .buttonPrev{
+    //         background: @gray;
+    //         border: none;
+    //         padding: 15px 20px;
+    //         cursor: pointer;
+    //         &:hover{
+    //             background: @orange;
+    //             transition: all 0.5s;
+    //         } 
+    //     }
+    //     .buttonNext{
+    //         background: @gray;
+    //         border: none;
+    //         padding: 15px 20px;
+    //         cursor: pointer;
+    //         &:hover{
+    //             background: @orange;
+    //             transition: all 0.5s;
+    //         } 
+    //     }
+    // }
+}
+//banner
+
+//section sobre nós
+.aboutUs{
+    position: relative;
+    margin-top: 130px;
+    @media (max-width: 992px) {
+        margin-top: 60px;
+    }
+    h2{
+        color: @orange;
+        font-size: 44px;
+        @media (max-width: 992px) {
+            font-size: 38px;
+        }
+    }
+    p{
+        font-size: 18px;
+        margin: 30px 0;
+        color: @gray;
+        font-weight: 200;
+        @media (max-width: 992px) {
+            font-size: 16px;
+            margin: 20px 0;
+        }
+    }
+    button{
+        background: @gray;
+        color: @white;
+        font-size: 18px;
+        padding: 20px 20px;
+        border: none;
+        cursor: pointer;
+        margin: 20px 0;
+        &:hover{
+            background: @orange;
+            transition: all 0.5s;
+        }
+        @media (max-width: 992px) {
+            padding: 15px 15px;
+            margin: 5px 0;
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
+//section sobre nós
+
+//section galeria
+.gallery{
+    h2{
+        color: @orange;
+        text-align: center;
+        font-size: 44px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    p{
+        font-size: 18px;
+        color: @gray;
+        font-weight: 200; 
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    img{
+        width: 100%;
+        margin: 10px 0;
+        height: 300px;
+        &:hover{
+            opacity: 0.4;
+        }
+    }
+
+    button{
+        background: @gray;
+        color: @white;
+        font-size: 18px;
+        padding: 20px 20px;
+        border: none;
+        cursor: pointer;
+        display: block;
+        margin: 30px auto;
+        &:hover{
+            background: @orange;
+            transition: all 0.5s;
+        }
+    }
+}
+//section galeria
+
+// segundo banner
+.banner2{
+    background: url(../images/services-bg.png);
+    margin-bottom: 60px;
+    height: 650px;
+    @media (max-width: 992px) {
+        height: 730px;
+    }
+    @media (max-width: 768px) {
+        height: 1200px;
+    }
+
+    .banner2content{
+        h3{
+            text-align: center;
+            font-size: 60px;
+            color: @white;
+            font-weight: 800;
+        }
+        p{
+            text-align: center;
+            color: @white;
+            color: @white;
+            font-size: 22px;
+            margin: 20px 0;
+        }
+    }
+    .boxBanner2{
+        background: @orange;
+        padding: 30px 0;
+        @media (max-width: 768px) {
+            margin: 10px 0;
+        }
+        img{
+            width: 15%;
+            height: 50px;
+            display: block;
+            margin: 0 auto;
+        }
+        h4{
+            color: @white;
+            font-size: 28px;
+            font-weight: 400;
+            text-align: center;
+            margin: 45px 0;
+        }
+
+        p{
+            color: @white;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        button{
+            background: @gray;
+            color: @white;
+            padding: 15px 15px;
+            font-size: 20px;
+            border: none;
+            margin: 40px 40px;
+            display: none;
+            cursor: pointer;
+            &:hover{
+                background: @orange;
+                transition: all 0.5s;
+            }
+            @media (max-width: 768px) {
+                margin: 20px auto;
+            }
+        }
+        &:hover{
+            background: @white;
+            button{
+                display: block;
+            }
+            h4{
+                color: @gray;
+            }
+            p{
+                color: @gray;
+            }
+        }
+    }
+}
+// segundo banner
+
+// depoimentos
+.testimony{
+    h2{
+        color: @orange;
+        font-size: 38px;
+        margin: 0 0 20px 0;
+    }
+    p{
+        font-weight: 300;
+        font-size: 16px;
+        margin: 0 0 40px 0;
+    }
+    .testimonyBox{
+        position: relative;
+        padding: 100px 0; 
+        margin: 10px 0;  
+        h5{
+            position: absolute;
+            top: 10px;
+            left: 170px;
+            color: @orange;
+            font-size: 22px;
+            font-weight: 800;
+        }
+        img{
+            position: absolute;
+            top: 15px;
+            left: 260px;
+        }
+        p{
+            position: absolute;
+            top: 50px;
+            left: 40px;
+        }
+        .b1, .b2, .b3, .b4 {
+            background-color: @gray;
+        }
+        .b1, .b2 {
+            width: 3px;
+            height: 70%;
+            position: absolute;
+        }
+        .b3, .b4 {
+            width: 14%;
+            height: 3px;
+            position: absolute;
+        }
+        .b1, .b3 {
+            top: 25px;
+            left: 0;
+        }
+        .b2, .b4 {
+            bottom: 20px;
+            right: 0;
+            @media (max-width: 1199px) {
+                right: -20px;
+            }
+            @media (max-width: 991px) {
+                bottom: 0;
+            }
+            @media (max-width: 767px) {
+                bottom: -90px;
+            }
+            @media (max-width: 485px) {
+                bottom: -120px;
+                right: -40px;
+            }
+            @media (max-width: 476px) {
+                bottom: -150px;
+            }
+            @media (max-width: 424px) {
+                bottom: -170px;
+            }
+            @media (max-width: 386px) {
+                bottom: -210px;
+            }
+            @media (max-width: 368px) {
+                bottom: -240px;
+            }
+            @media (max-width: 336px) {
+                bottom: -270px;
+            }
+        }        
+    }
+
+    .testimonyBox2{
+        display: none;
+        position: relative;
+        padding: 100px 0; 
+        margin: 40px 0; 
+        &.visible{
+            display: block;
+        }
+        h5{
+            position: absolute;
+            top: 10px;
+            left: 170px;
+            color: @orange;
+            font-size: 22px;
+            font-weight: 800;
+        }
+        img{
+            position: absolute;
+            top: 15px;
+            left: 267px;
+        }
+        p{
+            position: absolute;
+            top: 50px;
+            left: 40px;
+        }
+    }
+
+    .testimonyBox3{
+        display: none;
+        position: relative;
+        padding: 100px 0; 
+        margin: 40px 0;  
+        &.visible{
+            display: block;
+        }
+        h5{
+            position: absolute;
+            top: 10px;
+            left: 170px;
+            color: @orange;
+            font-size: 22px;
+            font-weight: 800;
+        }
+        img{
+            position: absolute;
+            top: 15px;
+            left: 260px;
+        }
+        p{
+            position: absolute;
+            top: 50px;
+            left: 40px;
+        }
+    }
+
+    .btnNext{
+        .btnNextBox{
+           button{
+                background: @gray;
+                padding: 7px 25px;
+                border-radius: 20px;
+                border: none;
+                margin: 0 8px;
+                display: flex;
+                margin: 10px auto;
+                @media (max-width: 767px) {
+                    margin: 120px auto;
+                }
+                @media (max-width: 485px) {
+                    margin: 170px auto;
+                }
+                @media (max-width: 424px) {
+                    margin: 240px auto;
+                }
+                @media (max-width: 368px) {
+                    margin: 270px auto;
+                }
+                @media (max-width: 336px) {
+                    margin: 300px auto;
+                }
+                &:active{
+                    background: @orange;
+                }
+           }
+        }
+    }
+
+    .contact{
+        margin: 20px 0;
+        text-align: center;
+        @media (max-width: 767px) {
+            margin: -100px 0 20px 0;
+        }
+        @media (max-width: 485px) {
+            margin: -140px 0 20px 0;
+        }
+        @media (max-width: 424px) {
+            margin: -240px 0 20px 0;
+        }
+    }
+}
+// depoimentos
+
+//formulario
+.form{
+    background-image: url(../images/img-10.png);
+    width: 100%;
+    height: 410px;
+    form{
+        ul{
+            li{
+                display: block;
+                input{
+                    float: right;
+                    margin: 5px 0;
+                    padding: 20px 180px;
+                    border: none;
+                    border-radius: 50px;
+                    font-size: 20px;
+                    color: @gray;
+                    @media (max-width: 1230px) {
+                        padding: 20px 150px;
+                    }
+                    @media (max-width: 1110px) {
+                        padding: 20px 100px;
+                    }
+                    @media (max-width: 920px) {
+                        padding: 20px 60px;
+                    }
+                    @media (max-width: 767px) {
+                        padding: 20px 100px;
+                    }
+                    @media (max-width: 469px) {
+                        padding: 20px 60px;
+                    }
+                    @media (max-width: 380px) {
+                        padding: 20px 20px;
+                    }
+                }
+                textarea{
+                    float: right;
+                    margin: 5px 0;
+                    padding: 30px 180px;
+                    border: none;
+                    border-radius: 40px;
+                    font-size: 20px;
+                    color: @gray;
+                    @media (max-width: 1230px) {
+                        padding: 30px 150px;
+                    }
+                    @media (max-width: 1110px) {
+                        padding: 30px 100px;
+                    }
+                    @media (max-width: 920px) {
+                        padding: 30px 60px;
+                    }
+                    @media (max-width: 767px) {
+                        padding: 30px 100px;
+                    }
+                    @media (max-width: 469px) {
+                        padding: 30px 60px;
+                    }
+                    @media (max-width: 380px) {
+                        padding: 30px 20px;
+                    }
+                }
+                button{
+                    background-color: @orange;
+                    color: @white;
+                    font-size: 18px;
+                    border: none;
+                    border-radius: 30px;
+                    padding: 20px 40px;
+                    display: block;
+                    margin: 5px auto;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: @white;
+                        color: @gray;
+                        transition: all 0.8s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mapIframe{
+    display: block;
+    width: 100%;
+    height: 410px;
+    @media (max-width: 767px) {
+        margin: 20px 0 0 0;
+    }
+}
+//formulario
+
+// footer
+.footer{
+    background: @gray-dark;
+    color: @white;
+    margin: 20px 0;
+    @media (max-width: 767px) {
+        margin: 440px 0 0 0;
+    }
+    h4{
+        font-size: 24px;
+        font-weight: 700;
+        margin: 30px 0;
+    }
+    p{
+        font-size: 13px;
+        margin: 30px 0;
+    }
+    ul{
+        text-align: left;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: @white;
+                font-size: 13px;
+                &:hover{
+                    color: @orange;
+                    transition: all 0.7s;
+                }
+            }
+        }
+    }
+    .contactFooter{
+        ul{
+            li{
+                position: relative;
+                a{
+                    img{
+                        margin: 10px 0;
+                    }
+                    p{
+                        position: absolute;
+                        top: -20px;
+                        left: 40px;
+                    }  
+                }  
+            }
+        }
+    }
+}
+
+.textFooter{
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 200;
+}
+//footer
+
+
